@@ -7,7 +7,8 @@ nav {
     .flex-mixin(column; center; center;);
     background: @nav-bg;
     @media @phone{
-        with: 100%;
+        width: 100%;
+        margin: 0;
     }
     .nav-header{
         font-size: 4rem;
@@ -15,11 +16,17 @@ nav {
     }
     .nav-anchor{
         width: 50%;
+        @media @phone{
+            width: 80%;
+        }
         .flex-mixin(row; space-around; center);
         a{
             text-decoration: none;
             color: @nav-font;
             font-size: 1.75rem;
+            @media @phone{
+                font-weight: 500;
+            }
         }
     }
 }
