@@ -1,9 +1,15 @@
 // Navigation code here
-nav {
-    margin: auto;
+.navbar-center{
+    .flex-mixin(row; center; center;)
+}
+nav{
+    margin: 0 auto;
     width: 50%;
     padding-bottom: 1%;
     height: 10%;
+    opacity: .75;
+    position: fixed;
+    top: 0;
     .flex-mixin(column; center; center;);
     background: @nav-bg;
     @media @phone{
@@ -43,6 +49,7 @@ nav {
 .nav-img{
     .flex-mixin(row; center; center;);
     margin: 0 auto;
+    margin-top: 5.20%;
     img{
         .border-rad-mixin(3px);
     }

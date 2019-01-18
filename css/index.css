@@ -159,12 +159,25 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 nav {
-  margin: auto;
+  margin: 0 auto;
   width: 50%;
   padding-bottom: 1%;
   height: 10%;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -265,6 +278,7 @@ nav .nav-anchor a:hover {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  margin-top: 5.2%;
 }
 .nav-img img {
   border-radius: 3px;
@@ -425,6 +439,6 @@ footer {
 .home .user-form .form_submit p {
   font-size: 2rem;
 }
-.home .user-form .form_submit .fa-dungeon {
+.home .user-form .form_submit .fa-space-shuttle {
   font-size: 2rem;
 }
