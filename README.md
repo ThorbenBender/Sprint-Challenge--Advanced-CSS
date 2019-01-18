@@ -43,7 +43,7 @@ With desktop first it is the opposite. You start with highest max-width and go d
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 It sets the default font-size to 10px. So you can easily calculate the font-size you want. (10px * 1.6rem = 16px)
 4. How would you describe preprocessing to someone new to CSS?
-
+It' s like css, but with more function like nesting, import ect. And the file will be compiled in a css file.
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 I like nesting in preprocessing and the concept that gives me the most trouble is animations. 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.

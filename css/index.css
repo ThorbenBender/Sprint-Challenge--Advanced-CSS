@@ -199,24 +199,19 @@ nav .nav-anchor a {
   font-size: 1.75rem;
 }
 nav .nav-anchor a:hover {
-  -webkit-animation: fade-in 3s linear infinite;
-  -moz-animation: fade-in 3s linear infinite;
-  animation: fade-in 3s linear infinite;
+  -webkit-animation: fade-in 1s linear infinite;
+  -moz-animation: fade-in 1s linear infinite;
+  animation: fade-in 1s linear infinite;
 }
 @-moz-keyframes fade-in {
   0% {
     transform: scale3d(1, 1, 1);
-    content: "Hello";
   }
   25% {
     transform: scale3d(1.1, 1.1, 1.1);
-    color: red;
-    content: 'Hello';
   }
   50% {
     transform: scale3d(1.2, 1.2, 1.2);
-    color: green;
-    content: 'Hello';
   }
   75% {
     transform: scale3d(1.1, 1.1, 1.1);
@@ -228,17 +223,12 @@ nav .nav-anchor a:hover {
 @-webkit-keyframes fade-in {
   0% {
     transform: scale3d(1, 1, 1);
-    content: "Hello";
   }
   25% {
     transform: scale3d(1.1, 1.1, 1.1);
-    color: red;
-    content: 'Hello';
   }
   50% {
     transform: scale3d(1.2, 1.2, 1.2);
-    color: green;
-    content: 'Hello';
   }
   75% {
     transform: scale3d(1.1, 1.1, 1.1);
@@ -250,17 +240,12 @@ nav .nav-anchor a:hover {
 @keyframes fade-in {
   0% {
     transform: scale3d(1, 1, 1);
-    content: "Hello";
   }
   25% {
     transform: scale3d(1.1, 1.1, 1.1);
-    color: red;
-    content: 'Hello';
   }
   50% {
     transform: scale3d(1.2, 1.2, 1.2);
-    color: green;
-    content: 'Hello';
   }
   75% {
     transform: scale3d(1.1, 1.1, 1.1);
@@ -418,7 +403,6 @@ footer {
   background: grey;
   padding: 1%;
   border: none;
-  cursor: pointer;
   width: 50%;
   border-bottom: 1px solid white;
 }
