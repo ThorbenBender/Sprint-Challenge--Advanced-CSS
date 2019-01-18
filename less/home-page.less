@@ -58,6 +58,15 @@
       }
 
       .btn {
+        .create_button(@white; @btn-bg-color);
+        width: 30%;
+        text-align: center;
+        padding: 2% 0%;
+        cursor: pointer;
+        .border-rad-mixin(5px);
+        &:hover{
+          .create_button(@btn-bg-color; @white);
+        }
       }
     }
 
