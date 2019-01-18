@@ -15,3 +15,20 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+.input_mixin(){
+    background: @button-bg;
+    border: none;
+    border-bottom: white 1px solid;
+}

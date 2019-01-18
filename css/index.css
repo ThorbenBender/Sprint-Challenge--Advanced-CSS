@@ -198,6 +198,77 @@ nav .nav-anchor a {
   color: #454A59;
   font-size: 1.75rem;
 }
+nav .nav-anchor a:hover {
+  -webkit-animation: fade-in 3s linear infinite;
+  -moz-animation: fade-in 3s linear infinite;
+  animation: fade-in 3s linear infinite;
+}
+@-moz-keyframes fade-in {
+  0% {
+    transform: scale3d(1, 1, 1);
+    content: "Hello";
+  }
+  25% {
+    transform: scale3d(1.1, 1.1, 1.1);
+    color: red;
+    content: 'Hello';
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+    color: green;
+    content: 'Hello';
+  }
+  75% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    transform: scale3d(1, 1, 1);
+    content: "Hello";
+  }
+  25% {
+    transform: scale3d(1.1, 1.1, 1.1);
+    color: red;
+    content: 'Hello';
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+    color: green;
+    content: 'Hello';
+  }
+  75% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes fade-in {
+  0% {
+    transform: scale3d(1, 1, 1);
+    content: "Hello";
+  }
+  25% {
+    transform: scale3d(1.1, 1.1, 1.1);
+    color: red;
+    content: 'Hello';
+  }
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+    color: green;
+    content: 'Hello';
+  }
+  75% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 @media (max-width: 500px) {
   nav .nav-anchor a {
     font-weight: 500;
@@ -326,4 +397,50 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.home .user-form {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .user-form .input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  padding: 4%;
+}
+.home .user-form .input input {
+  background: grey;
+  padding: 1%;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-bottom: 1px solid white;
+}
+.home .user-form .input input::placeholder {
+  color: white;
+}
+.home .user-form .form_submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1% 0%;
+  background: black;
+  width: 15%;
+  word-spacing: 1rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.home .user-form .form_submit p {
+  font-size: 2rem;
+}
+.home .user-form .form_submit .fa-dungeon {
+  font-size: 2rem;
 }

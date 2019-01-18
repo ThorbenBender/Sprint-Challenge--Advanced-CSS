@@ -104,4 +104,42 @@
       }
     }
   }
+  .user-form{
+    background: grey;
+    .flex-mixin(column; center; center);
+    .input{
+      width: 100%;
+      .flex-mixin(row; center; center);
+      background: grey;
+      padding: 4%;
+      input{
+        background: grey;
+        padding: 1%;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        border-bottom: 1px solid @white;
+        &::placeholder{
+          color: white;
+        }
+      }
+    }
+    .form_submit{
+      .border-rad-mixin(5px);
+      .flex-mixin(row; space-evenly; center);
+      padding: 1% 0%;
+      background: black;
+      width: 15%;
+      word-spacing: 1rem;
+      color: white;
+      text-align: center;
+      .border-rad-mixin(5px);
+      p{
+        font-size: 2rem;
+      }
+      .fa-dungeon{
+        font-size: 2rem;
+      }
+    }
+  }
 }// home

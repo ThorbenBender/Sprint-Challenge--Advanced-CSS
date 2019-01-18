@@ -24,6 +24,22 @@ nav {
             text-decoration: none;
             color: @nav-font;
             font-size: 1.75rem;
+            &:hover{
+                .keyframes(fade-in;{
+                    0% { transform: scale3d(1, 1, 1);
+                        content: "Hello";
+                    }
+                    25% { transform: scale3d(1.1, 1.1, 1.1);
+                        color: red;
+                        content: 'Hello'}
+                    50% { transform: scale3d(1.2, 1.2, 1.2);
+                        color: green;
+                        content: 'Hello';}
+                    75% { transform: scale3d(1.1, 1.1, 1.1);}
+                    100% { transform: scale3d(1, 1, 1);}
+                });
+                .animation(fade-in 3s linear infinite);
+            }
             @media @phone{
                 font-weight: 500;
             }
