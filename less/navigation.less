@@ -1,1 +1,56 @@
 // Navigation code here
+.navbar-center{
+    .flex-mixin(row; center; center;)
+}
+nav{
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 1%;
+    height: 10%;
+    opacity: .75;
+    position: fixed;
+    top: 0;
+    .flex-mixin(column; center; center;);
+    background: @nav-bg;
+    @media @phone{
+        width: 100%;
+        margin: 0;
+    }
+    .nav-header{
+        font-size: 4rem;
+        margin-bottom: 2%;
+    }
+    .nav-anchor{
+        width: 50%;
+        @media @phone{
+            width: 80%;
+        }
+        .flex-mixin(row; space-around; center);
+        a{
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.75rem;
+            &:hover{
+                .keyframes(fade-in;{
+                    0% { transform: scale3d(1, 1, 1);}
+                    25% { transform: scale3d(1.1, 1.1, 1.1);}
+                    50% { transform: scale3d(1.2, 1.2, 1.2);}
+                    75% { transform: scale3d(1.1, 1.1, 1.1);}
+                    100% { transform: scale3d(1, 1, 1);}
+                });
+                .animation(fade-in 1s linear infinite);
+            }
+            @media @phone{
+                font-weight: 500;
+            }
+        }
+    }
+}
+.nav-img{
+    .flex-mixin(row; center; center;);
+    margin: 0 auto;
+    margin-top: 5.20%;
+    img{
+        .border-rad-mixin(3px);
+    }
+}

@@ -18,7 +18,16 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    .sky, .launch{
+      @media @phone{
+        display: none;
+      }
+    }
+    .blast{
+      @media @phone{
+        width: 100%;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -45,10 +54,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone{
+      flex-direction: column-reverse;
+      width: 100%;
+      padding: 5%;
+    }
     .walk-text {
       width: 50%;
-
+      @media @phone{
+        width: 100%;
+        padding-top: 5%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -58,17 +74,70 @@
       }
 
       .btn {
+        .create_button(@white; @btn-bg-color);
+        width: 30%;
+        text-align: center;
+        padding: 2% 0%;
+        cursor: pointer;
+        .border-rad-mixin(5px);
+        @media @phone{
+          width: 100%;
+          padding: 6% 0%;
+        }
+        &:hover{
+          .create_button(@btn-bg-color; @white);
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone{
+        width: 100%;
+        margin: 0 auto;
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+  }
+  .user-form{
+    background: grey;
+    .flex-mixin(column; center; center);
+    .input{
+      width: 100%;
+      .flex-mixin(row; center; center);
+      background: grey;
+      padding: 4%;
+      input{
+        background: grey;
+        padding: 1%;
+        border: none;
+        width: 50%;
+        border-bottom: 1px solid @white;
+        &::placeholder{
+          color: white;
+        }
+      }
+    }
+    .form_submit{
+      .border-rad-mixin(5px);
+      .flex-mixin(row; space-evenly; center);
+      padding: 1% 0%;
+      background: black;
+      width: 15%;
+      word-spacing: 1rem;
+      color: white;
+      text-align: center;
+      .border-rad-mixin(5px);
+      p{
+        font-size: 2rem;
+      }
+      .fa-space-shuttle{
+        font-size: 2rem;
       }
     }
   }
